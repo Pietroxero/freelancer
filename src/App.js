@@ -1,6 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+const mongoose = require('mongoose')
+const mongodb = require('mongodb');
+const MongoClient = mongodb.MongoClient;
+const url = 'mongodb://127.0.0.1:27017/FreeLancer';
+const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
+const router= require('./routes/index')
+
+const express = require('express');
+
+const PORT = process.env.port || 2324;
+const app = express();
+app.use(express.json());
+app.use(router);
+
+
+ 
+mongoose.connect(url, () => {
+  console.log("connected")
+  app.listen(PORT, () => console.log("Now listening"));
+});
+
+
+
 function App() {
   return (
     <div className="App">
