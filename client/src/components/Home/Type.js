@@ -1,6 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
+//change able list
 function Type() {
   return (
     <Typewriter

@@ -2,6 +2,9 @@ import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
 
+
+//If we want this for a freelancer page could be something like
+//"this is a calendar of availability for new clients and what not"
 function Github() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>

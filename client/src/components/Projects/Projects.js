@@ -8,6 +8,8 @@ import Particle from "../Particle";
  import weather from "../../Assets/Projects/weather.png";
 import profile from "../../Assets/Projects/profile.png";
 
+
+//Projects cards and page, this we can literally rinse and repeat for all pages
 function Projects() {
   return (
     <Container fluid className="project-section">
