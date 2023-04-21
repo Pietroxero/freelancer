@@ -19,6 +19,7 @@ function Home2() {
               ALLOW ME <span className="purple">TO INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
+              
               I TOOK A CODING BOOTCAMP TO CHALLENGE MYSELF AND 
               LEARN NEW LANGUAGES I HAD ONLY FIDDLED WITH IN MYSPACE DAYS &
               SINCE FINISHING THE BOOTCAMP I FEEL AS IF I HAVE AT LEAST LEARNED
@@ -76,18 +77,6 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
-              {/* <li className="social-icons">
-                            This section is not to be used at this time, as this link is for my personal adult content this will be used 
-                            in a later project but is left for reference point.
-                <a
-                  href="https://twitter.com/inkedcub92"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li> */}
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/peter-del-sol/"

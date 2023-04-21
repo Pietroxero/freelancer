@@ -8,7 +8,7 @@ import {
   
 } from "react-icons/di";
 
-
+//this could be list of specialties
 function Stacktech() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
