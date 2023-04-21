@@ -24,7 +24,7 @@ const socialSchema = mongoose.Schema({
         type: Number,
         required: true
     },
-    reviews:  [socialReviewSchema],
+    socialReviews:  [socialReviewSchema],
     rating: {
         type: Number,
         required: true

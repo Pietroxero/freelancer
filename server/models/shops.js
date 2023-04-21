@@ -23,7 +23,7 @@ const shopSchema = mongoose.Schema({
         type: Number,
         required: true
     },
-    reviews:  [shopReviewSchema],
+    shopReviews:  [shopReviewSchema],
     rating: {
         type: Number,
         required: true

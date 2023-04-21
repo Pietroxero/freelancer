@@ -24,7 +24,7 @@ const securitySchema = mongoose.Schema({
         type: Number,
         required: true
     },
-    reviews:  [securityReviewSchema],
+    securityReviews:  [securityReviewSchema],
     rating: {
         type: Number,
         required: true
