@@ -24,7 +24,7 @@ const blogSchema = mongoose.Schema({
         type: Number,
         required: true
     },
-    reviews:  [blogReviewSchema],
+    blogReviews:  [blogReviewSchema],
     rating: {
         type: Number,
         required: true
