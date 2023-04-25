@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/freelancer/static/css/main.0d298936.css",
+    "main.js": "/freelancer/static/js/main.cc3f7fd4.js",
+    "static/js/787.4ca3dacb.chunk.js": "/freelancer/static/js/787.4ca3dacb.chunk.js",
+    "static/media/logo.png": "/freelancer/static/media/logo.c5aed6ee2678409556f2.png",
+    "static/media/home-bg.jpg": "/freelancer/static/media/home-bg.9e7cb5935a2f48f68fc6.jpg",
+    "static/media/ecommerce.png": "/freelancer/static/media/ecommerce.eb4d8c7641e35501c3c8.png",
+    "static/media/home-main.svg": "/freelancer/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
+    "static/media/about.png": "/freelancer/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/notes.png": "/freelancer/static/media/notes.b92cf0d5abbb50e37e2c.png",
+    "static/media/planner.png": "/freelancer/static/media/planner.335e085d569687b81825.png",
+    "static/media/weather.png": "/freelancer/static/media/weather.da82d90df1524122d7db.png",
+    "static/media/profile.png": "/freelancer/static/media/profile.b07d48dd2431be165332.png",
+    "static/media/pre.svg": "/freelancer/static/media/pre.f67229aaeff761db0dd5.svg",
+    "index.html": "/freelancer/index.html",
+    "main.0d298936.css.map": "/freelancer/static/css/main.0d298936.css.map",
+    "main.cc3f7fd4.js.map": "/freelancer/static/js/main.cc3f7fd4.js.map",
+    "787.4ca3dacb.chunk.js.map": "/freelancer/static/js/787.4ca3dacb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d298936.css",
+    "static/js/main.cc3f7fd4.js"
+  ]
+}
