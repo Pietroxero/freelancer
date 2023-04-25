@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import SocialsCards from "./SocialsCards";
-import Particle from "../Particle";
+// import Particle from "../Particle";
  import twoCents from "../../Assets/Socials/2 cents.jpg";
  import incognito from "../../Assets/Socials/incognito-symbol-large.jpg";
  import onlyFriends from "../../Assets/Socials/only friends.jpg";
@@ -13,7 +13,7 @@ import soundWave from "../../Assets/Socials/soundwave_article_1.jpg";
 function Socials() {
   return (
     <Container fluid className="project-section">
-      <Particle />
+      {/* <Particle /> */}
       <Container>
         <h1 className="project-heading">
           Recent <strong className="purple">Works </strong>

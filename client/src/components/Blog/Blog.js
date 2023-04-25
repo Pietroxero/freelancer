@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import BlogCards from "./BlogCards";
-import Particle from "../Particle";
+// import Particle from "../Particle";
  import cat from "../../Assets/Blog/cat paw.jpg";
  import kale from "../../Assets/Blog/kale.jpg";
  import lost from "../../Assets/Blog/lost.jpg";
@@ -13,7 +13,7 @@ import travel from "../../Assets/Blog/travel.jpg";
 function Blog() {
   return (
     <Container fluid className="project-section">
-      <Particle />
+      {/* <Particle /> */}
       <Container>
         <h1 className="project-heading">
           Recent <strong className="purple">Works </strong>

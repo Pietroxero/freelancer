@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import SecuritiesCards from "./SecuritiesCards";
-import Particle from "../Particle";
+// import Particle from "../Particle";
  import cancer from "../../Assets/Securities/cancer.jpg";
  import cancerSign from "../../Assets/Securities/cancer-sign.jpg";
  import highSchool from "../../Assets/Securities/highschool.jpg";
@@ -13,7 +13,7 @@ import virus from "../../Assets/Securities/virus.jpg";
 function Securities() {
   return (
     <Container fluid className="project-section">
-      <Particle />
+      {/* <Particle /> */}
       <Container>
         <h1 className="project-heading">
           Recent <strong className="purple">Works </strong>

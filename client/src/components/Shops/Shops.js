@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ShopsCards from "./ShopsCards";
-import Particle from "../Particle";
+// import Particle from "../Particle";
  import cake from "../../Assets/Shops/cake.jpg";
  import kitten from "../../Assets/Shops/kitten.jpg";
  import narwal from "../../Assets/Shops/narwal.jpg";
@@ -13,7 +13,7 @@ import vape from "../../Assets/vape.jpg";
 function Shops() {
   return (
     <Container fluid className="project-section">
-      <Particle />
+      {/* <Particle /> */}
       <Container>
         <h1 className="project-heading">
           Recent <strong className="purple">Works </strong>
