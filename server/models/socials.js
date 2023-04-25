@@ -38,5 +38,5 @@ socialReviewSchema.virtual('reviewCount').get(function() {
     return this.reviews.length;
   });
 
-const Social = mongoose.model('Security', socialSchema);
+const Social = mongoose.model('Social', socialSchema);
 module.exports = Social;

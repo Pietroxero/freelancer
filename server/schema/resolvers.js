@@ -5,13 +5,13 @@ const resolvers = {
         blogs: async () => {
             return Blog.find();
         },
-        security: async () => {
+        securitys: async () => {
             return Security.find();
         },
-        shop: async () => {
+        shops: async () => {
             return Shop.find();
         },
-        social: async () => {
+        socials: async () => {
             return Social.find();
         }
     },
