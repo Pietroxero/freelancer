@@ -1,6 +1,16 @@
 const {gql} = require('apollo-server-express');
 
 const typeDefs = gql`
+type Creator {
+    _id: ID!
+    username: String!
+    email: String!
+}
+type Review {
+    _id: ID!
+    review: String!
+    user: User!
+}
 type Blog {
     _id: ID!
     projectTitle: String!
@@ -10,7 +20,7 @@ type Blog {
     rating: Int
     creator: Creator!
 }
-type security {
+type Security {
     _id: ID!
     projectTitle: String!
     projectDescription: String!
@@ -19,7 +29,7 @@ type security {
     rating: Int
     creator: Creator!
 }
-type shop {
+type Shop {
     _id: ID!
     projectTitle: String!
     projectDescription: String!
@@ -28,7 +38,7 @@ type shop {
     rating: Int
     creator: Creator!
 }
-type social {
+type Social {
     _id: ID!
     projectTitle: String!
     projectDescription: String!
@@ -37,7 +47,7 @@ type social {
     rating: Int
     creator: Creator!
 }
-type user {
+type User {
     _id: ID!
     username: String!
     password: String!
@@ -45,21 +55,27 @@ type user {
 }
 type Query {
     blogs: [Blog]
-    security: [Security]
-    shop: [Shop]
-    social: [Social]
+    securitys: [Security]
+    shops: [Shop]
+    socials: [Social]
     blog(projectTitle:String!): Blog
     security(projectTitle:String!): Security
     shop(projectTitle:String!): Shop
     social(projectTitle:String!): Social
-    reviewsByUser(userName: String!): [Review]
+    reviewsByUser(userName: String!): User
 }
 type Mutation {
-    addBlog(reviews: [Review])
-    addSecurity(reviews: [Review])
-    addShop(reviews: [Review])
-    addSocial(reviews: [Review])
+    addBlogReview(reviews: String) : Blog
+    addSecurityReview(reviews: String) : Security
+    addShopReview(reviews: String) : Shop
+    addSocialReview(reviews: String) : Social
     addUser(username: String!, password: String!): User
+    removeBlogReview(reviewId: ID!): Blog
+    removeSecurityReview(reviewId: ID!): Security
+    removeShopReview(reviewId: ID!): Shop
+    removeSocialReview(reviewId: ID!): Social
+    
+}
 `;
 
 module.exports = typeDefs;
