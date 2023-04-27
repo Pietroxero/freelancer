@@ -54,7 +54,7 @@ type User {
     reviews: [Review]
 }
 type Auth {
-    token: String!
+    token: ID!
     user: User
   }
 type Query {
@@ -67,6 +67,7 @@ type Query {
     shop(projectTitle:String!): Shop
     social(projectTitle:String!): Social
     reviewsByUser(userName: String!): User
+    me: User
 }
 type Mutation {
     addBlogReview(reviews: String) : Blog
