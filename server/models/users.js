@@ -15,7 +15,7 @@ const userSchema = mongoose.Schema({
     maxLength: 15,
   },
   reviews: [
-    { type: mongoose.Schema.Types.ObjectId },
+    { type: String },
   ],
 });
 

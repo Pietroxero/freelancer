@@ -1,4 +1,5 @@
 const {Blog, Security, Shop, Social} = require('../models');
+const { signToken } = require('../utils/auth');
 
 const resolvers = {
     Query: {
@@ -16,8 +17,10 @@ const resolvers = {
         }
     },
     Mutation: {
-        addUser: async (parent, {userName, Password}) => {
-            return User.create({userName, Password});
+        addUser: async (parent, {userName, password}) => {
+            const user = await User.create({userName, password});
+            const token = signToken(user);
+            return ({token, user});
         },
         addBlogReview: async (parent, {title, review}) => {
             return Blog.findOneAndUpdate(
@@ -75,6 +78,22 @@ const resolvers = {
                 {new: true}
             );
         },
+        login: async (parent, { userName, password }) => {
+            const user = await User.findOne({ userName });
+      
+            if (!user) {
+              throw new AuthenticationError('No user with this email found!');
+            }
+      
+            const correctPw = await user.isCorrectPassword(password);
+      
+            if (!correctPw) {
+              throw new AuthenticationError('Incorrect password!');
+            }
+      
+            const token = signToken(user);
+            return { token, user };
+          },
     }, 
 
 
