@@ -1,0 +1,60 @@
+[
+  {
+    "projecttitle": "Paws for Thought",
+    "projectdescription": "A blog site for cat lovers to share their stories and pictures of their cats.",
+    "price": 199.99,
+    "blogreviews": [
+      { "review": "OMG what a precious baby! Hey dont knock that off the table!!!","user": "Linc@Linc.com"}
+    ],
+    "rating": 5,
+    "creator": [{ "name": "Kay", "email": "Kay@Kay.com" }]
+  },
+  {
+    "projecttitle": "Recipes Comma Bad",
+    "projectdescription": "A blog site for amateur chefs and foodies to share their worst kitchen mistakes and disasters",
+    "price": 39.99,
+    "blogreviews": [
+      { "review": "It was basically just cereal and ketchup... idk why I did this.", "user": "Linc@Linc.com"},
+      {"review": "You should be in prison!","user": "Kay@Kay.com"}
+    ],
+    "rating": 5,
+    "creator": [{ "name": "Kay", "email": "Kay@Kay.com" }]
+  },
+  {
+    "projecttitle": "Kale",
+    "projectdescription": "A blog site for people to blog about the magificent superfood KALE!",
+    "price": 19.99,
+    "blogreviews": [
+      { "review": "omg i love Kale", "user": "Linc@Linc.com"},
+      {"review": "omg i love Kale","user": "Kay@Kay.com"},
+      {"review": "omg i love Kale","user": "Shane@Shane.com"},
+      {"review": "omg i love Kale","user": "Peter@Peter.com"}
+    ],
+    "rating": 4,
+    "creator": [{ "name": "Shane", "email": "Shane@Shane.com" }]
+  },
+  {
+    "projecttitle": "Lost",
+    "projectdescription": "A blog site for people to blog about hit tv show Lost!",
+    "price": 9.99,
+    "blogreviews": [
+      { "review": "What was with the smoke monster??", "user": "Linc@Linc.com"},
+      {"review": "Wait so they go back to the island???","user": "Kay@Kay.com"},
+      {"review": "So they were definitely dead right?","user": "Shane@Shane.com"},
+      {"review": "Could someone please just explain the polar bear???","user": "Peter@Peter.com"}
+    ],
+    "rating": 2,
+    "creator": [{ "name": "Shane", "email": "Shane@Shane.com" }]
+  },
+  {
+    "projecttitle": "Traveler's Log",
+    "projectdescription": "A blog site for travelers to post about their favorite destinations.",
+    "price": 19.99,
+    "blogreviews": [
+      { "review": "So my husband and I summered in the maldives....","user": "Linc@Linc.com"}
+    ],
+    "rating": 5,
+    "creator": [{ "name": "Peter", "email": "Peter@Peter.com" }]
+  }
+  
+]
