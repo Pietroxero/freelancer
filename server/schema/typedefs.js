@@ -53,6 +53,10 @@ type User {
     password: String!
     reviews: [Review]
 }
+type Auth {
+    token: String!
+    user: User
+  }
 type Query {
     blogs: [Blog]
     securitys: [Security]
@@ -74,6 +78,8 @@ type Mutation {
     removeSecurityReview(reviewId: ID!): Security
     removeShopReview(reviewId: ID!): Shop
     removeSocialReview(reviewId: ID!): Social
+    addUser(username: String!, password: String!): Auth
+    login(username: String!, password: String!): Auth
     
 }
 `;
