@@ -1,0 +1,64 @@
+[
+    {
+        "projecttitle": "Only Friends",
+        "projectdescription": "A social media platform for people who want to make friends and Only Friends",
+        "price": 19.99,
+        "socialreviews": [
+            {"review": "I want friends and only friends!", "user": "Shane@shane.com"}
+        ],
+        "rating": 4,
+        "creator": [
+            {"name": "Kay", "email": "Kay@Kay.com"}
+        ]
+    },
+    {
+        "projecttitle": "My Two Cents",
+        "projectdescription": "A social media platform for people to post and comment on pictures, but you only get 2 words so use them well!",
+        "price": 29.99,
+        "socialreviews": [
+            {"review": "So Good", "user": "Kay@Kay.com"}
+        ],
+        "rating": 4,
+        "creator": [
+            {"name": "Linc", "email": "Linc@Linc.com"}
+        ]
+    },
+    {
+        "projecttitle": "Sound Byte",
+        "projectdescription": "A social media platform for people to post and comment on sounds!",
+        "price": 2.99,
+        "socialreviews": [
+            {"review": "This SOUNDS like a bad idea!", "user": "Peter@Peter.com"}
+        ],
+        "rating": 1,
+        "creator": [
+            {"name": "Shane", "email": "Shane@Shane.com"}
+        ]
+    },
+    {
+        "projecttitle": "Doom Preppers",
+        "projectdescription": "A social media platform for people who believe the end is near... and want to spend the time thats left romantically",
+        "price": 29.99,
+        "socialreviews": [
+            {"review": "So romantic... but threatening?", "user": "Kay@Kay.com"},
+            {"review": "Its threatmantic!", "user": "Shane@Shane.com"}
+        ],
+        "rating": 5,
+        "creator": [
+            {"name": "Linc", "email": "Linc@Linc.com"}
+        ]
+    },
+    {
+        "projecttitle": "Incognito Anonymous",
+        "projectdescription": "A social media platform for people who are trying to leave their hacker past behind and start anew!",
+        "price": 9.99,
+        "socialreviews": [
+            {"review": "So you can connect... anonymously?", "user": "Kay@Kay.com"}
+        ],
+        "rating": 2,
+        "creator": [
+            {"name": "Shane", "email": "Shane@Shane.com"}
+        ]
+    }
+    
+]

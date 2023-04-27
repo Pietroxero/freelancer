@@ -11,12 +11,12 @@ const creatorSchema = mongoose.Schema({
 });
 
 const socialSchema = mongoose.Schema({
-    projectTitle: {
+    projecttitle: {
         type: String,
         required: true,
         unique: true
     },
-    projectDescription: {
+    projectdescription: {
         type: String,
         required: true
     },
@@ -24,7 +24,7 @@ const socialSchema = mongoose.Schema({
         type: Number,
         required: true
     },
-    socialReviews:  [socialReviewSchema],
+    socialreviews:  [socialReviewSchema],
     rating: {
         type: Number,
         required: true
