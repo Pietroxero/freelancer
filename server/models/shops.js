@@ -5,17 +5,16 @@ const shopReviewSchema = mongoose.Schema({
     user: {type: String, required: true, ref: 'User'}
 });
 const creatorSchema = mongoose.Schema({
-    username: { type: String, required: true, unique: true },
-    email: { type: String, required: true, unique: true, match: [/.+@.+\..+/, 'Must match an email address!'] },
+    username: { type: String, required: true},
+    email: { type: String, required: true, match: [/.+@.+\..+/, 'Must match an email address!'] },
 
 });
 const shopSchema = mongoose.Schema({
-    projectTitle: {
+    projecttitle: {
         type: String,
-        required: true,
-        unique: true
+        required: true
     },
-    projectDescription: {
+    projectdescription: {
         type: String,
         required: true
     },
@@ -23,7 +22,7 @@ const shopSchema = mongoose.Schema({
         type: Number,
         required: true
     },
-    shopReviews:  [shopReviewSchema],
+    shopreviews:  [shopReviewSchema],
     rating: {
         type: Number,
         required: true

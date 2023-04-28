@@ -16,13 +16,8 @@ const resolvers = {
     },
     socials: async () => {
       return Social.find();
-    },
-    me: async (parent, args, context) => {
-      if (context.user) {
-        return User.findOne({ _id: context.user._id });
-      }
-      throw new AuthenticationError("Please log in!");
-    },
+    }
+ 
   },
   Mutation: {
     addUser: async (parent, { userName, password }, context) => {

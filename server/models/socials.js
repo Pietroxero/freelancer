@@ -5,16 +5,15 @@ const socialReviewSchema = mongoose.Schema({
     user: {type: String, required: true, ref: 'User'}
 });
 const creatorSchema = mongoose.Schema({
-    username: { type: String, required: true, unique: true },
-    email: { type: String, required: true, unique: true, match: [/.+@.+\..+/, 'Must match an email address!'] },
+    username: { type: String, required: true },
+    email: { type: String, required: true, match: [/.+@.+\..+/, 'Must match an email address!'] },
 
 });
 
 const socialSchema = mongoose.Schema({
     projecttitle: {
         type: String,
-        required: true,
-        unique: true
+        required: true
     },
     projectdescription: {
         type: String,

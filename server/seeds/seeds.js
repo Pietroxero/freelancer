@@ -1,4 +1,4 @@
-const db = require('../config/connection');
+const mongoose = require('mongoose');
 const { User, Blog, Security, Shop, Social} = require('../models');
 const userSeeds = require('./userSeeds.json');
 const blogSeeds = require('./blogSeeds.json');
@@ -6,7 +6,7 @@ const securitySeeds = require('./securitySeeds.json');
 const shopSeeds = require('./shopSeeds.json');
 const socialSeeds = require('./socialSeeds.json');
 
-db.once('open', async () => {
+const seedData = async () => {
     try {
         await User.deleteMany({});
         await Blog.deleteMany({});
@@ -14,11 +14,11 @@ db.once('open', async () => {
         await Shop.deleteMany({});
         await Social.deleteMany({});
     
-        await User.create(userSeeds);
-        await Blog.create(blogSeeds);
-        await Security.create(securitySeeds);
-        await Shop.create(shopSeeds);
-        await Social.create(socialSeeds);
+        await User.insertMany(userSeeds);
+        await Blog.insertMany(blogSeeds);
+        await Security.insertMany(securitySeeds);
+        await Shop.insertMany(shopSeeds);
+        await Social.insertMany(socialSeeds);
 
     
         console.log('all done!');
@@ -26,5 +26,7 @@ db.once('open', async () => {
     } catch (err) {
         throw err;
     }
-    } 
-);
+    
+};
+
+module.exports = seedData;

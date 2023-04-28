@@ -11,9 +11,8 @@ const userSchema = mongoose.Schema({
   password: {
     type: String,
     required: true,
-    unique: true,
     minLength: 5,
-    maxLength: 15,
+    maxLength: 15
   },
   reviews: [
     { type: String },
