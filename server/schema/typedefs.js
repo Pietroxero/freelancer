@@ -13,8 +13,8 @@ type Review {
 }
 type Blog {
     _id: ID!
-    projecttitle: String!
-    projectdescription: String!
+    project title : String!
+    project description : String!
     price: Int!
     reviews: [Review]
     rating: Int
@@ -22,8 +22,8 @@ type Blog {
 }
 type Security {
     _id: ID!
-    projecttitle: String!
-    projectdescription: String!
+    project title: String!
+    project description: String!
     price: Int!
     reviews: [Review]
     rating: Int

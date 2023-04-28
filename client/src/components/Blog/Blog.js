@@ -7,17 +7,36 @@ import BlogCards from "./BlogCards";
  import lost from "../../Assets/Blog/lost.jpg";
  import recipies from "../../Assets/Blog/recipies.jpg";
 import travel from "../../Assets/Blog/travel.jpg";
+import { useQuery } from '@apollo/client';
+import {query blogs } from '../utils/queries';
 
 
 //Projects cards and page, this we can literally rinse and repeat for all pages
 function Blog() {
+
+  function getBlogs() {
+    const { loading, error, data } = useQuery(blogs);
+  if (loading) return <p>Loading...</p>;
+    if (error) return <p>Error :(</p>;
+
+    <ul>
+        {data.blogs.map((blogs) => (
+          <li key={blogs.projecttitle}>
+            {blogs.projecttitle}
+          </li>
+        ))}
+      </ul>
+
   return (
     <Container fluid className="project-section">
       {/* <Particle /> */}
       <Container>
         <h1 className="project-heading">
-          Recent <strong className="purple">Works </strong>
+           <strong className="purple">Blogs: </strong>
         </h1>
+
+      
+
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on.
         </p>
@@ -26,7 +45,7 @@ function Blog() {
             <BlogCards
              imgPath={cat}
               isBlog={false}
-              title="Weather"
+              title="weather"
               description="This project was meant to create a weather API service and use what I learned in class
               regarding fetch data requests. The idea for the page was for a user to input a city name (EX: Los Angeles) and the current
               temperature, wind speed, humidity populate to the page in cards. The page also presents with preset city names as well."
