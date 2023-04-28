@@ -8,7 +8,9 @@
         ],
         "rating": 4,
         "creator": [
+
             {"username": "Kay", "email": "Kay@Kay.com"}
+
         ]
     },
     {
@@ -20,7 +22,9 @@
         ],
         "rating": 4,
         "creator": [
+
             {"username": "Linc", "email": "Linc@Linc.com"}
+
         ]
     },
     {
@@ -32,7 +36,9 @@
         ],
         "rating": 1,
         "creator": [
+
             {"username": "Shane", "email": "Shane@Shane.com"}
+
         ]
     },
     {
@@ -45,7 +51,9 @@
         ],
         "rating": 5,
         "creator": [
+
             {"username": "Linc", "email": "Linc@Linc.com"}
+
         ]
     },
     {
@@ -57,7 +65,9 @@
         ],
         "rating": 2,
         "creator": [
+
             {"username": "Shane", "email": "Shane@Shane.com"}
+
         ]
     }
     

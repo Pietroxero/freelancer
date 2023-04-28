@@ -7,7 +7,9 @@
       { "review": "OMG what a precious baby! Hey dont knock that off the table!!!","user": "Linc@Linc.com"}
     ],
     "rating": 5,
+
     "creator": [{ "username": "Kay", "email": "Kay@Kay.com" }]
+
   },
   {
     "projecttitle": "Recipes Comma Bad",
@@ -18,7 +20,9 @@
       {"review": "You should be in prison!","user": "Kay@Kay.com"}
     ],
     "rating": 5,
+
     "creator": [{ "username": "Kay", "email": "Kay@Kay.com" }]
+
   },
   {
     "projecttitle": "Kale",
@@ -31,7 +35,9 @@
       {"review": "omg i love Kale","user": "Peter@Peter.com"}
     ],
     "rating": 4,
+
     "creator": [{ "username": "Shane", "email": "Shane@Shane.com" }]
+
   },
   {
     "projecttitle": "Lost",
@@ -44,7 +50,9 @@
       {"review": "Could someone please just explain the polar bear???","user": "Peter@Peter.com"}
     ],
     "rating": 2,
+
     "creator": [{ "username": "Shane", "email": "Shane@Shane.com" }]
+
   },
   {
     "projecttitle": "Traveler's Log",
@@ -54,7 +62,9 @@
       { "review": "So my husband and I summered in the maldives....","user": "Linc@Linc.com"}
     ],
     "rating": 5,
+
     "creator": [{ "username": "Peter", "email": "Peter@Peter.com" }]
+
   }
   
 ]
