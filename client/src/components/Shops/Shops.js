@@ -6,7 +6,7 @@ import ShopsCards from "./ShopsCards";
  import kitten from "../../Assets/Shops/kitten.jpg";
  import narwal from "../../Assets/Shops/narwal.jpg";
  import shoes from "../../Assets/Shops/shoes.jpg";
-import vape from "../../Assets/vape.jpg";
+ import vape from "../../Assets/Shops/vape.jpg";
 
 
 //Projects cards and page, this we can literally rinse and repeat for all pages
@@ -16,10 +16,10 @@ function Shops() {
       {/* <Particle /> */}
       <Container>
         <h1 className="project-heading">
-          Recent <strong className="purple">Works </strong>
+          Shops <strong className="purple">for purchase </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on.
+          Browse through our list of shops you can buy!
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
