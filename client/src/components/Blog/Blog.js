@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import BlogCards from "./BlogCards";
 // import Particle from "../Particle";
- import cat from "../../Assets/Blog/cat paw.jpg";
+ import cat from "../../Assets/Blog/cat paws.jpg";
  import kale from "../../Assets/Blog/kale.jpg";
  import lost from "../../Assets/Blog/lost.jpg";
  import recipies from "../../Assets/Blog/recipies.jpg";

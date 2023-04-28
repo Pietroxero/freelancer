@@ -14,10 +14,10 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copyright">
-          <h3>Developed by Peter Del Sol</h3>
+          <h3>Created by Peter, Lincoln, Shane, and Krista</h3>
         </Col>
         <Col md="4" className="footer-copyright">
-          <h3>Copyright © {year} PDS</h3>
+          <h3>Copyright © {year}</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
@@ -42,7 +42,7 @@ function Footer() {
                   <AiOutlineTwitter />
                 </a>
               </li> */}
-            <li className="social-icons">
+            {/* <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/peter-del-sol/"
                 style={{ color: "white" }}
@@ -51,8 +51,8 @@ function Footer() {
               >
                 <FaLinkedinIn />
               </a>
-            </li>
-            <li className="social-icons">
+            </li> */}
+            {/* <li className="social-icons">
               <a
                 href="https://www.instagram.com/pietroxerohero"
                 style={{ color: "white" }}
@@ -61,7 +61,7 @@ function Footer() {
               >
                 <AiFillInstagram />
               </a>
-            </li>
+            </li> */}
           </ul>
         </Col>
       </Row>
