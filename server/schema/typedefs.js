@@ -13,8 +13,8 @@ type Review {
 }
 type Blog {
     _id: ID!
-    projectTitle: String!
-    projectDescription: String!
+    projecttitle: String!
+    projectdescription: String!
     price: Int!
     reviews: [Review]
     rating: Int
@@ -22,8 +22,8 @@ type Blog {
 }
 type Security {
     _id: ID!
-    projectTitle: String!
-    projectDescription: String!
+    projecttitle: String!
+    projectdescription: String!
     price: Int!
     reviews: [Review]
     rating: Int
@@ -31,8 +31,8 @@ type Security {
 }
 type Shop {
     _id: ID!
-    projectTitle: String!
-    projectDescription: String!
+    projecttitle: String!
+    projectdescription: String!
     price: Int!
     reviews: [Review]
     rating: Int
@@ -40,8 +40,8 @@ type Shop {
 }
 type Social {
     _id: ID!
-    projectTitle: String!
-    projectDescription: String!
+    projecttitle: String!
+    projectdescription: String!
     price: Int!
     reviews: [Review]
     rating: Int
@@ -62,23 +62,22 @@ type Query {
     securitys: [Security]
     shops: [Shop]
     socials: [Social]
-    blog(projectTitle:String!): Blog
-    security(projectTitle:String!): Security
-    shop(projectTitle:String!): Shop
-    social(projectTitle:String!): Social
-    reviewsByUser(userName: String!): User
-    me: User
+    blog(projecttitle:String!): Blog
+    security(projecttitle:String!): Security
+    shop(projecttitle:String!): Shop
+    social(projecttitle:String!): Social
+    reviewsByUser(username: String!): User
+    
 }
 type Mutation {
     addBlogReview(reviews: String) : Blog
     addSecurityReview(reviews: String) : Security
     addShopReview(reviews: String) : Shop
     addSocialReview(reviews: String) : Social
-    addUser(username: String!, password: String!): User
     removeBlogReview(reviewId: ID!): Blog
-    removeSecurityReview(reviewId: ID!): Security
-    removeShopReview(reviewId: ID!): Shop
-    removeSocialReview(reviewId: ID!): Social
+    removeSecurityReview(reviewid: ID!): Security
+    removeShopReview(reviewid: ID!): Shop
+    removeSocialReview(reviewid: ID!): Social
     addUser(username: String!, password: String!): Auth
     login(username: String!, password: String!): Auth
     

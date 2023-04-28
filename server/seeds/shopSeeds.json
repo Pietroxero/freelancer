@@ -7,7 +7,9 @@
           { "review": "Its my Kit in a box!","user": "Linc@Linc.com"}
         ],
         "rating": 5,
-        "creator": [{ "name": "Kay", "email": "Kay@Kay.com" }]
+
+        "creator": [{ "username": "Kay", "email": "Kay@Kay.com" }]
+
       },
       {
         "projecttitle": "Let's Get Some Shoes",
@@ -18,7 +20,9 @@
           { "review": "These shoes suck!","user": "Kay@Kay.com"}
         ],
         "rating": 3,
-        "creator": [{ "name": "Shane", "email": "Shane@Shane.com" }]
+
+        "creator": [{ "username": "Shane", "email": "Shane@Shane.com" }]
+
       },
       {
         "projecttitle": "Narwhals!",
@@ -29,18 +33,22 @@
             { "review": "Because they are so awesome!","user": "Kay@Kay.com"}
         ],
         "rating": 3,
-        "creator": [{ "name": "Peter", "email": "Peter@Peter.com" }]
+
+        "creator": [{ "username": "Peter", "email": "Peter@Peter.com" }]
+
       },
       {
         "projecttitle": "Cake in a Box",
         "projectdescription": "A website shopfront to sell and ship cakes.",
         "price": 29.99,
         "shopreviews": [
-          { "review": "Its my cake in a box!","user": "Peter@Peter.com"}.
+
+          { "review": "Its my cake in a box!","user": "Peter@Peter.com"},
             { "review": "We already made this joke!","user": "Linc@Linc.com"}
         ],
         "rating": 3,
-        "creator": [{ "name": "Shane", "email": "Shane@Shane.com" }]
+        "creator": [{ "username": "Shane", "email": "Shane@Shane.com" }]
+
       },
       {
         "projecttitle": "Vape Nation",
@@ -50,7 +58,9 @@
           { "review": "Perfect for shopping for your favorite TA","user": "Kay@Kay.com"}
         ],
         "rating": 2,
-        "creator": [{ "name": "Peter", "email": "Peter@Peter.com" }]
+
+        "creator": [{ "username": "Peter", "email": "Peter@Peter.com" }]
+
       }
       
 ]

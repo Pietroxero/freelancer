@@ -5,18 +5,18 @@ const securityReviewSchema = mongoose.Schema({
     user: {type: String, required: true, ref: 'User'}
 });
 const creatorSchema = mongoose.Schema({
-    username: { type: String, required: true, unique: true },
-    email: { type: String, required: true, unique: true, match: [/.+@.+\..+/, 'Must match an email address!'] },
+    username: { type: String, required: true,},
+    email: { type: String, required: true, match: [/.+@.+\..+/, 'Must match an email address!'] },
 
 });
 
 const securitySchema = mongoose.Schema({
-    projectTitle: {
+    projecttitle: {
         type: String,
-        required: true,
-        unique: true
+        required: true
+    
     },
-    projectDescription: {
+    projectdescription: {
         type: String,
         required: true
     },
@@ -24,7 +24,7 @@ const securitySchema = mongoose.Schema({
         type: Number,
         required: true
     },
-    securityReviews:  [securityReviewSchema],
+    securityreviews:  [securityReviewSchema],
     rating: {
         type: Number,
         required: true

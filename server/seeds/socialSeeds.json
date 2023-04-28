@@ -8,7 +8,9 @@
         ],
         "rating": 4,
         "creator": [
-            {"name": "Kay", "email": "Kay@Kay.com"}
+
+            {"username": "Kay", "email": "Kay@Kay.com"}
+
         ]
     },
     {
@@ -20,7 +22,9 @@
         ],
         "rating": 4,
         "creator": [
-            {"name": "Linc", "email": "Linc@Linc.com"}
+
+            {"username": "Linc", "email": "Linc@Linc.com"}
+
         ]
     },
     {
@@ -32,7 +36,9 @@
         ],
         "rating": 1,
         "creator": [
-            {"name": "Shane", "email": "Shane@Shane.com"}
+
+            {"username": "Shane", "email": "Shane@Shane.com"}
+
         ]
     },
     {
@@ -45,7 +51,9 @@
         ],
         "rating": 5,
         "creator": [
-            {"name": "Linc", "email": "Linc@Linc.com"}
+
+            {"username": "Linc", "email": "Linc@Linc.com"}
+
         ]
     },
     {
@@ -57,7 +65,9 @@
         ],
         "rating": 2,
         "creator": [
-            {"name": "Shane", "email": "Shane@Shane.com"}
+
+            {"username": "Shane", "email": "Shane@Shane.com"}
+
         ]
     }
     

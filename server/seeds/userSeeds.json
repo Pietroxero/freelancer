@@ -1,0 +1,18 @@
+[
+    {
+        "username": "Linc@Linc.com",
+        "password": "123abc"
+    },
+    {
+        "username": "Peter@Peter.com",
+        "password": "abc123"
+    },
+    {
+        "username": "Shane@shane.com",
+        "password": "456def"
+    },
+    {
+        "username": "Kay@Kay.com",
+        "password": "def456"
+    }
+]
