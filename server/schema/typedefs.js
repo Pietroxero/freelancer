@@ -9,22 +9,22 @@ type Creator {
 type Review {
     _id: ID!
     review: String!
-    user: User!
+    user: String!
 }
 type Blog {
     _id: ID!
-    project title : String!
-    project description : String!
-    price: Int!
-    reviews: [Review]
+    projecttitle : String!
+    projectdescription : String!
+    price: Float!
+    blogreviews: [Review]
     rating: Int
-    creator: Creator!
+    creator: [Creator]!
 }
 type Security {
     _id: ID!
-    project title: String!
-    project description: String!
-    price: Int!
+    projecttitle: String!
+    projectdescription: String!
+    price: Float!
     reviews: [Review]
     rating: Int
     creator: Creator!
@@ -33,7 +33,7 @@ type Shop {
     _id: ID!
     projecttitle: String!
     projectdescription: String!
-    price: Int!
+    price: Float!
     reviews: [Review]
     rating: Int
     creator: Creator!
@@ -42,7 +42,7 @@ type Social {
     _id: ID!
     projecttitle: String!
     projectdescription: String!
-    price: Int!
+    price: Float!
     reviews: [Review]
     rating: Int
     creator: Creator!
@@ -66,7 +66,9 @@ type Query {
     security(projecttitle:String!): Security
     shop(projecttitle:String!): Shop
     social(projecttitle:String!): Social
-    reviewsByUser(username: String!): User
+    blogreviews(review: String!, user: String): Blog
+   
+   
     
 }
 type Mutation {

@@ -8,7 +8,7 @@
         ],
         "rating": 5,
 
-        "creator": [{ "username": "Kay", "email": "Kay@Kay.com" }]
+        "creator": [{ "username": "Krista", "email": "Krista@Krista.com" }]
 
       },
       {
@@ -17,7 +17,7 @@
         "price": 29.99,
         "shopreviews": [
           { "review": "These shoes rule!","user": "Peter@Peter.com"},
-          { "review": "These shoes suck!","user": "Kay@Kay.com"}
+          { "review": "These shoes suck!","user": "Krista@Krista.com"}
         ],
         "rating": 3,
 
@@ -30,7 +30,7 @@
         "price": 1999.99,
         "shopreviews": [
           { "review": "These narwhals are causing a commotion!","user": "Shane@Shane.com"},
-            { "review": "Because they are so awesome!","user": "Kay@Kay.com"}
+            { "review": "Because they are so awesome!","user": "Krista@Krista.com"}
         ],
         "rating": 3,
 
@@ -55,7 +55,7 @@
         "projectdescription": "A website shopfront to sell and ship vapes.",
         "price": 19.99,
         "shopreviews": [
-          { "review": "Perfect for shopping for your favorite TA","user": "Kay@Kay.com"}
+          { "review": "Perfect for shopping for your favorite TA","user": "Krista@Krista.com"}
         ],
         "rating": 2,
 
