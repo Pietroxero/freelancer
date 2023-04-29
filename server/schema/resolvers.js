@@ -1,7 +1,7 @@
 const { Blog, Security, Shop, Social, User } = require("../models");
 const { signToken } = require("../utils/auth");
 const { AuthenticationError } = require("apollo-server-express");
-const mongoose = require("mongoose");
+
 
 const resolvers = {
   Query: {
@@ -12,13 +12,22 @@ const resolvers = {
       }).populate("blogreviews");
     },
     securitys: async () => {
-      return Security.find().populate("creator").populate("securityreviews");
+      return Security.find().populate({
+        path: "creator",
+        populate: "creator"
+      }).populate("securityreviews");
     },
     shops: async () => {
-      return Shop.find().populate("creator").populate("shopreviews");
+      return Shop.find().populate({
+        path: "creator",
+        populate: "creator"
+      }).populate("shopreviews");
     },
     socials: async () => {
-      return Social.find().populate("creator").populate("socialreviews");
+      return Social.find().populate({
+        path: "creator",
+        populate: "creator"
+      }).populate("socialreviews");
     }
  
   },

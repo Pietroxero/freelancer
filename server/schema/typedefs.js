@@ -19,33 +19,37 @@ type Blog {
     blogreviews: [Review]
     rating: Int
     creator: [Creator]!
+    image: String!
 }
 type Security {
     _id: ID!
     projecttitle: String!
     projectdescription: String!
     price: Float!
-    reviews: [Review]
+    securityreviews: [Review]
     rating: Int
-    creator: Creator!
+    creator: [Creator]!
+    image: String!
 }
 type Shop {
     _id: ID!
     projecttitle: String!
     projectdescription: String!
     price: Float!
-    reviews: [Review]
+    shopreviews: [Review]
     rating: Int
-    creator: Creator!
+    creator: [Creator]!
+    image: String!
 }
 type Social {
     _id: ID!
     projecttitle: String!
     projectdescription: String!
     price: Float!
-    reviews: [Review]
+    socialreviews: [Review]
     rating: Int
-    creator: Creator!
+    creator: [Creator]!
+    image: String!
 }
 type User {
     _id: ID!
@@ -67,6 +71,10 @@ type Query {
     shop(projecttitle:String!): Shop
     social(projecttitle:String!): Social
     blogreviews(review: String!, user: String): Blog
+    securityreviews(review: String!, user: String): Security
+    shopreviews(review: String!, user: String): Shop
+    socialreviews(review: String!, user: String): Social
+   
    
    
     
