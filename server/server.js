@@ -27,12 +27,12 @@ app.get('/', (req, res) => {
 
 
 
-const startApolloServer = async (typeDefs, resolvers) => {
+const startApolloServer = async () => {
   await server.start();
   server.applyMiddleware({ app });
   
   db.once('open', () => {
-    seedData();
+    
     app.listen(PORT, () => {
       console.log(`API server running on port ${PORT}!`);
       console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
@@ -41,4 +41,4 @@ const startApolloServer = async (typeDefs, resolvers) => {
   };
   
 
-  startApolloServer(typeDefs, resolvers);
+  startApolloServer();

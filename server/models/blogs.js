@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const opts = { timestamps: true, toJSON: { virtuals: true } };
 const blogReviewSchema = mongoose.Schema({
     review: { type: String, required: true , minLength: 5, maxLength: 280},
-    user: {type: String, required: true, ref: 'User'}
+    user: {type: String, required: true}
 });
 const creatorSchema = mongoose.Schema({
     username: { type: String, required: true},
@@ -29,6 +29,7 @@ const blogSchema = mongoose.Schema({
         required: true
     },
     creator : [creatorSchema]
+
 },
 opts);
 

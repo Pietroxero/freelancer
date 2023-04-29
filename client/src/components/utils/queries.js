@@ -1,16 +1,17 @@
 import {gql} from '@apollo/client';
 
 export const Blogs = gql`
-  query blogs {
+query  {
 
-    blog {
-      _id
-      project title
-      project description
-      price
-      blog reviews
-      rating
-      creator
-    }
+  blogs {
+    _id
+    projecttitle
+    projectdescription
+    price
+    blogreviews {review, user}
+    rating
+    creator{username}
   }
+  
+}
 `;

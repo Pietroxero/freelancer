@@ -8,7 +8,7 @@
     ],
     "rating": 5,
 
-    "creator": [{ "username": "Kay", "email": "Kay@Kay.com" }]
+    "creator": [{ "username": "Krista", "email": "Krista@Krista.com" }]
 
   },
   {
@@ -17,11 +17,11 @@
     "price": 39.99,
     "blogreviews": [
       { "review": "It was basically just cereal and ketchup... idk why I did this.", "user": "Linc@Linc.com"},
-      {"review": "You should be in prison!","user": "Kay@Kay.com"}
+      {"review": "You should be in prison!","user": "Krista@Krista.com"}
     ],
     "rating": 5,
 
-    "creator": [{ "username": "Kay", "email": "Kay@Kay.com" }]
+    "creator": [{ "username": "Krista", "email": "Krista@Krista.com" }]
 
   },
   {
@@ -30,7 +30,7 @@
     "price": 19.99,
     "blogreviews": [
       { "review": "omg i love Kale", "user": "Linc@Linc.com"},
-      {"review": "omg i love Kale","user": "Kay@Kay.com"},
+      {"review": "omg i love Kale","user": "Krista@Krista.com"},
       {"review": "omg i love Kale","user": "Shane@Shane.com"},
       {"review": "omg i love Kale","user": "Peter@Peter.com"}
     ],
@@ -44,8 +44,8 @@
     "projectdescription": "A blog site for people to blog about hit tv show Lost!",
     "price": 9.99,
     "blogreviews": [
-      { "review": "What was with the smoke monster??", "user": "Linc@Linc.com"},
-      {"review": "Wait so they go back to the island???","user": "Kay@Kay.com"},
+      {"review": "What was with the smoke monster??", "user": "Linc@Linc.com"},
+      {"review": "Wait so they go back to the island???","user": "Krista@Krista.com"},
       {"review": "So they were definitely dead right?","user": "Shane@Shane.com"},
       {"review": "Could someone please just explain the polar bear???","user": "Peter@Peter.com"}
     ],

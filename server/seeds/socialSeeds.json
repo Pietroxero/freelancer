@@ -9,7 +9,7 @@
         "rating": 4,
         "creator": [
 
-            {"username": "Kay", "email": "Kay@Kay.com"}
+            {"username": "Krista", "email": "Krista@Krista.com"}
 
         ]
     },
@@ -18,7 +18,7 @@
         "projectdescription": "A social media platform for people to post and comment on pictures, but you only get 2 words so use them well!",
         "price": 29.99,
         "socialreviews": [
-            {"review": "So Good", "user": "Kay@Kay.com"}
+            {"review": "So Good", "user": "Krista@Krista.com"}
         ],
         "rating": 4,
         "creator": [
@@ -46,7 +46,7 @@
         "projectdescription": "A social media platform for people who believe the end is near... and want to spend the time thats left romantically",
         "price": 29.99,
         "socialreviews": [
-            {"review": "So romantic... but threatening?", "user": "Kay@Kay.com"},
+            {"review": "So romantic... but threatening?", "user": "Krista@Krista.com"},
             {"review": "Its threatmantic!", "user": "Shane@Shane.com"}
         ],
         "rating": 5,
@@ -61,7 +61,7 @@
         "projectdescription": "A social media platform for people who are trying to leave their hacker past behind and start anew!",
         "price": 9.99,
         "socialreviews": [
-            {"review": "So you can connect... anonymously?", "user": "Kay@Kay.com"}
+            {"review": "So you can connect... anonymously?", "user": "Krista@Krista.com"}
         ],
         "rating": 2,
         "creator": [

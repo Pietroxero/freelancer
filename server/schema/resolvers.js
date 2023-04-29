@@ -6,16 +6,19 @@ const mongoose = require("mongoose");
 const resolvers = {
   Query: {
     blogs: async () => {
-      return Blog.find();
+      return Blog.find({}).populate({
+        path: "creator",
+        populate: "creator"
+      }).populate("blogreviews");
     },
     securitys: async () => {
-      return Security.find();
+      return Security.find().populate("creator").populate("securityreviews");
     },
     shops: async () => {
-      return Shop.find();
+      return Shop.find().populate("creator").populate("shopreviews");
     },
     socials: async () => {
-      return Social.find();
+      return Social.find().populate("creator").populate("socialreviews");
     }
  
   },
