@@ -29,7 +29,11 @@ const securitySchema = mongoose.Schema({
         type: Number,
         required: true
     },
-    creator : [creatorSchema]
+    creator : [creatorSchema],
+    image: {
+        type: String,
+        required: true
+    }
 },
 opts
 );

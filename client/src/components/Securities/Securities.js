@@ -1,43 +1,52 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import SecuritiesCards from "./SecuritiesCards";
+import SecurityCards from "./SecuritiesCards";
 // import Particle from "../Particle";
- import cancer from "../../Assets/Securities/cancer.jpg";
- import cancerSign from "../../Assets/Securities/cancer-sign.jpg";
- import highSchool from "../../Assets/Securities/highschool.jpg";
- import tigers from "../../Assets/Securities/tigers.jpg";
-import virus from "../../Assets/Securities/virus.jpg";
+
+
+
+
 
 
 //Projects cards and page, this we can literally rinse and repeat for all pages
 function Securities() {
+
+  
+
   return (
+    
+    <>
+   
     <Container fluid className="project-section">
       {/* <Particle /> */}
       <Container>
         <h1 className="project-heading">
-          Recent <strong className="purple">Works </strong>
+           <strong className="purple">Security: </strong>
         </h1>
+
+      
+
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on.
+          These colorful Blog sites can be yours for a small fee!
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
-            <SecuritiesCards
-             imgPath={cancer}
-              isBlog={false}
-              title="Weather"
-              description="This project was meant to create a weather API service and use what I learned in class
-              regarding fetch data requests. The idea for the page was for a user to input a city name (EX: Los Angeles) and the current
-              temperature, wind speed, humidity populate to the page in cards. The page also presents with preset city names as well."
-              ghLink="https://github.com/Pietroxero/What_Weather"
+          
+         
+            <SecurityCards 
+            
+             
+              
               
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <SecuritiesCards
-                         imgPath={cancerSign}
+          <div className="project-card">
+      
+    </div>
+          {/* <Col md={4} className="project-card">
+            <BlogCards
+                         imgPath={kale}
               isBlog={false}
               title="Personal Planner"
               description="For this project, the task was to create a daily schedule for an 8 hour working dat 7am - 3pm where 
@@ -50,8 +59,8 @@ function Securities() {
           
 
           <Col md={4} className="project-card">
-            <SecuritiesCards
-            imgPath={highSchool}
+            <BlogCards
+            imgPath={lost}
               isBlog={false}
               title="Note Taker"
               description="This project was my first attempt with heroku. I was tasked with creating an app that could be used to write and save notes. This application
@@ -62,8 +71,8 @@ function Securities() {
           </Col>
 
           <Col md={4} className="project-card">
-            <SecuritiesCards
-            imgPath={tigers}
+            <BlogCards
+            imgPath={recipies}
               isBlog={false}
               title="E Commerce"
               description="In this challenge the task was to get comfortable with building the back end for an E-commerce site. Using Express.js API
@@ -73,20 +82,23 @@ function Securities() {
           </Col>
 
           <Col md={4} className="project-card">
-            <SecuritiesCards
-            imgPath={virus}
+            <BlogCards
+            imgPath={travel}
               isBlog={false}
               title="Profile Maker"
               description="For this project, the task was to create a question prompt in the CLI and from there
               based on answers it would generate an HTML page that shows a team's personnel structure, manager, engineer(s), intern(s)."
               ghLink="https://github.com/Pietroxero/Team_Profile_generator"
 
-            />
-          </Col>
+            /> */}
+          {/* </Col> */}
         </Row>
       </Container>
-    </Container>
+    </Container></>
   );
 }
+
+
+
 
 export default Securities;
