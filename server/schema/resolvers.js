@@ -43,7 +43,7 @@ const resolvers = {
     },
     addBlogReview: async (parent, { title, review }, context) => {
         if (context.user) {
-      return Blog.findOneAndUpdate(
+      return Blog.Create(
         { projectTitle: title },
         { $push: { blogReviews: { review } } },
         { new: true, runValidators: true }
@@ -52,7 +52,7 @@ const resolvers = {
     },
     addSecurityReview: async (parent, { title, review }, context) => {
         if (context.user) {
-      return Security.findOneAndUpdate(
+      return Security.Create(
         { projectTitle: title },
         { $push: { securityReviews: { review } } },
         { new: true, runValidators: true }
@@ -61,21 +61,26 @@ const resolvers = {
     },
     addShopReview: async (parent, { title, review}, context) => {
         if (context.user) {
-      return Shop.findOneAndUpdate(
+      return Shop.Create(
         { projectTitle: title },
         { $push: { shopReviews: { review } } },
         { new: true, runValidators: true }
       )}
         throw new AuthenticationError("Please log in!");
     },
-    addSocialReview: async (parent, { title, review }, context) => {
-        if (context.user) {
-      return Social.findOneAndUpdate(
-        { projectTitle: title },
-        { $push: { socialReviews: { review } } },
+    addSocialReview: async (parent, { _id, socialreviews }) => {
+        // if (context.user) {
+          console.log(_id), console.log(socialreviews, "socialreviews");
+          const newSocialReview = await Social.findOneAndUpdate(
+            { _id: _id },
+        { $push: { socialreviews: socialreviews } },
         { new: true, runValidators: true }
-      )}
-        throw new AuthenticationError("Please log in!");
+          );
+      return newSocialReview;
+      
+      
+    // }
+        // throw new AuthenticationError("Please log in!");
     },
     removeBlogReview: async (parent, { reviewId, review }, context) => {
         if (context.user) {

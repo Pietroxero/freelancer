@@ -3,7 +3,7 @@ import {gql} from '@apollo/client';
 export const Blogs = gql`
 query  {
 
-  blogs{
+  blogs {
     _id
     projecttitle
     projectdescription
