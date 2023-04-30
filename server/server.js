@@ -7,12 +7,12 @@ const db = require('./config/connection');
 require('dotenv').config();
 
 
-const PORT = process.env.PORT ;
+const PORT = process.env.PORT || 1337;
 const app = express();
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  // context: authMiddleware,
+   context: authMiddleware,
 });
 
 app.use(express.urlencoded({ extended: false }));
@@ -42,4 +42,4 @@ const startApolloServer = async () => {
   };
   
 
-  startApolloServer();
+  startApolloServer(typeDefs, resolvers);
