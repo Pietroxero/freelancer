@@ -6,6 +6,8 @@ import { useQuery, useMutation } from "@apollo/client";
 import { Social } from "../utils/queries";
 import { Newsocialreview } from "../utils/mutations";
 import { Modal } from "react-bootstrap";
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+const ClientId = "AXHDiIQhvPES-ADJw3Bj-5kaRIpCpo52etwRBW3Jg67xDtyKJYpUGGccESFiPCb39C3dLUS5hCBQU0nW";
 
 function SocialCards(props) {
 
@@ -80,6 +82,7 @@ let reviewValue;
         const state = socialState[social._id];
 
         return (
+          <>
           <Card key={social.projecttitle} className="project-card-view">
             <Card.Img variant="top" src={`${social.image}`} alt="card-img" />
             <Card.Body>
@@ -160,6 +163,27 @@ let reviewValue;
               </Card.Text>
             </Card.Body>
           </Card>
+          <div>
+          <PayPalScriptProvider options={{ "client-id": ClientId }} >
+          <PayPalButtons  style={{ layout: "horizontal", color: "silver"}} createOrder={(data, actions) => {
+            return actions.order
+            .create({
+                purchase_units: [
+                    {
+                        amount: {
+                            
+                            value: social.price,
+                        },
+                    },
+                ],
+            })
+            .then((orderId) => {
+                // Your code here after create the order
+                return orderId;
+            });
+          }} />
+      </PayPalScriptProvider>   
+      </div>  </>
         );
       })}
     </div>

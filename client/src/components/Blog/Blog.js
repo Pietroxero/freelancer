@@ -26,12 +26,8 @@ function Blog() {
           <Col md={4} className="project-card">
           
          
-            <BlogCards 
-            
-             
-              
-              
-            />
+            <BlogCards/>
+         
           </Col>
 
           <div className="project-card">
