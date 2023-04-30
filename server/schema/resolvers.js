@@ -41,33 +41,48 @@ const resolvers = {
         throw new AuthenticationError("Please log in!");
       
     },
-    addBlogReview: async (parent, { title, review }, context) => {
-        if (context.user) {
-      return Blog.Create(
-        { projectTitle: title },
-        { $push: { blogReviews: { review } } },
-        { new: true, runValidators: true }
-      )}
-        throw new AuthenticationError("Please log in!");
-    },
-    addSecurityReview: async (parent, { title, review }, context) => {
-        if (context.user) {
-      return Security.Create(
-        { projectTitle: title },
-        { $push: { securityReviews: { review } } },
-        { new: true, runValidators: true }
-      )}
-        throw new AuthenticationError("Please log in!");
-    },
-    addShopReview: async (parent, { title, review}, context) => {
-        if (context.user) {
-      return Shop.Create(
-        { projectTitle: title },
-        { $push: { shopReviews: { review } } },
-        { new: true, runValidators: true }
-      )}
-        throw new AuthenticationError("Please log in!");
-    },
+    addBlogReview: async (parent, { _id, blogreviews }) => {
+      // if (context.user) {
+        console.log(_id), console.log(blogreviews, "blogreviews");
+        const newBlogReview = await Blog.findOneAndUpdate(
+          { _id: _id },
+      { $push: { blogreviews: blogreviews } },
+      { new: true, runValidators: true }
+        );
+    return newBlogReview;
+    
+    
+  // }
+      // throw new AuthenticationError("Please log in!");
+  },
+    addSecurityReview: async (parent, { _id, securityreviews }) => {
+      // if (context.user) {
+        console.log(_id), console.log(securityreviews, "securityreviews");
+        const newSecurityReview = await Security.findOneAndUpdate(
+          { _id: _id },
+      { $push: { securityreviews: securityreviews } },
+      { new: true, runValidators: true }
+        );
+    return newSecurityReview;
+    
+    
+  // }
+      // throw new AuthenticationError("Please log in!");
+  },
+    addShopReview: async (parent, { _id, shopreviews }) => {
+      // if (context.user) {
+        console.log(_id), console.log(shopreviews, "shopreviews");
+        const newShopReview = await Shop.findOneAndUpdate(
+          { _id: _id },
+      { $push: { shopreviews: shopreviews } },
+      { new: true, runValidators: true }
+        );
+    return newShopReview;
+    
+    
+  // }
+      // throw new AuthenticationError("Please log in!");
+  },
     addSocialReview: async (parent, { _id, socialreviews }) => {
         // if (context.user) {
           console.log(_id), console.log(socialreviews, "socialreviews");

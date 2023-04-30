@@ -83,9 +83,9 @@ type Query {
     
 }
 type Mutation {
-    addBlogReview(review: String, user: String) : Blog
-    addSecurityReview(review: String, user: String) : Security
-    addShopReview(review: String, user: String) : Shop
+    addBlogReview(_id: String, blogreviews: ReviewInput) : Blog
+    addSecurityReview(_id: String, securityreviews: ReviewInput) : Security
+    addShopReview(_id: String, shopreviews: ReviewInput) : Shop
     addSocialReview(_id: String, socialreviews: ReviewInput) : Social
     removeBlogReview(reviewId: ID!): Blog
     removeSecurityReview(reviewid: ID!): Security
