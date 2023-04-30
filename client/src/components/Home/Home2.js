@@ -16,14 +16,11 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              ALLOW ME <span className="purple">TO INTRODUCE </span> MYSELF
+              FreeLancer is a Site where you can purchase pre-built websites, blogs and other web applications for your very own!
             </h1>
-            <p className="home-about-body">
+            {/* <p className="home-about-body">
               
-              I TOOK A CODING BOOTCAMP TO CHALLENGE MYSELF AND 
-              LEARN NEW LANGUAGES I HAD ONLY FIDDLED WITH IN MYSPACE DAYS &
-              SINCE FINISHING THE BOOTCAMP I FEEL AS IF I HAVE AT LEAST LEARNED
-              SOMETHING, I THINK... 🤷‍♂️
+              
               <br />
               <br />I am fluent in classic language hits such as (but not limited to)
               <i>
@@ -53,7 +50,7 @@ function Home2() {
               <i>
                 <b className="purple"> React.js.</b>
               </i>
-            </p>
+            </p> */}
           </Col>
           <Col md={4} className="myAvtar">
             {/* <Tilt>
@@ -62,7 +59,7 @@ function Home2() {
           </Col>
         </Row>
         <Row>
-          <Col md={12} className="home-about-social">
+          {/* <Col md={12} className="home-about-social">
             <h1>YOU CAN FIND ME ON</h1>
             <p>
               Feel free to <span className="purple">reach out </span>to me
@@ -97,8 +94,8 @@ function Home2() {
                   <AiFillInstagram />
                 </a>
               </li>
-            </ul>
-          </Col>
+            </ul> */}
+          {/* </Col> */}
         </Row>
       </Container>
     </Container>

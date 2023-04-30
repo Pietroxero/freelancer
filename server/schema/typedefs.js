@@ -7,7 +7,10 @@ type Creator {
     email: String!
 }
 type Review {
-    _id: ID!
+    review: String!
+    user: String!
+}
+input ReviewInput {
     review: String!
     user: String!
 }
@@ -80,10 +83,10 @@ type Query {
     
 }
 type Mutation {
-    addBlogReview(reviews: String) : Blog
-    addSecurityReview(reviews: String) : Security
-    addShopReview(reviews: String) : Shop
-    addSocialReview(reviews: String) : Social
+    addBlogReview(_id: String, blogreviews: ReviewInput) : Blog
+    addSecurityReview(_id: String, securityreviews: ReviewInput) : Security
+    addShopReview(_id: String, shopreviews: ReviewInput) : Shop
+    addSocialReview(_id: String, socialreviews: ReviewInput) : Social
     removeBlogReview(reviewId: ID!): Blog
     removeSecurityReview(reviewid: ID!): Security
     removeShopReview(reviewid: ID!): Shop

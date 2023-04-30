@@ -516,11 +516,11 @@ html {
     border-radius: 0px !important;
   }
   
-  .btn-primary {
+  /* .btn-primary {
     color: #fff !important;
     background-color: #b4040d !important;
     border-color: #623686 !important;
-  }
+  } */
   
   .btn-primary:hover {
     color: #fff !important;
