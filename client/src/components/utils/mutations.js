@@ -1,5 +1,17 @@
 import { gql } from "@apollo/client";
 
+export const LOGIN_USER = gql`
+  mutation login($userName: String!, $password: String!) {
+    login(userName: $userName, password: $password) {
+      token
+      user {
+        _id
+        username
+      }
+    }
+  }
+`;
+
 export const Newsocialreview = gql`
 mutation Newsocialreview($_id: String!, $socialreviews: ReviewInput!) {
     addSocialReview(_id: $_id, socialreviews: $socialreviews) {
