@@ -1,22 +1,22 @@
 html {
     --section-background-color: linear-gradient(
       to bottom left,
-      rgba(17, 16, 16, 0.582),
+      rgba(15, 15, 15, 0.582),
       rgba(12, 8, 24, 0.904)
     );
   
     --image-gradient: linear-gradient(
       to bottom left,
-      rgba(17, 16, 16, 0.678),
+      rgba(34, 35, 37, 0.678),
       rgba(12, 10, 22, 0.863)
     );
   
-    --imp-text-color: #af020b;
+    --imp-text-color: #0b9fb7;
   }
   
-  .purple {
+  /* .purple {
     color: var(--imp-text-color) !important;
-  }
+  } */
   
   button:focus {
     box-shadow: none !important;
@@ -57,18 +57,18 @@ html {
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #2d1950;
+    background: #005E6D;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgba(113, 19, 175, 0.959);
+    background: rgba(0, 178, 206, 0.959);
     border-radius: 12px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(113, 19, 175, 0.959);
+    background: rgba(47, 173, 193, 0.959);
     border-radius: 12px;
   }
   
@@ -78,7 +78,7 @@ html {
   .sticky {
     background-color: #1b1a2ea9 !important;
     transition: all 0.3s ease-out 0s !important;
-    box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+    box-shadow: 0px 10px 10px 0px rgba(59, 26, 224, 0.171) !important;
     backdrop-filter: blur(15px) !important;
   }
   
@@ -97,7 +97,7 @@ html {
   
   .navbar-toggler span {
     display: block !important;
-    background-color: #a00e16 !important;
+    background-color: #0B9FB7 !important;
     height: 4px !important;
     width: 27px !important;
     margin-top: 5px !important;
@@ -194,7 +194,7 @@ html {
     height: 5px;
     width: 0;
     border-radius: 16px;
-    background: #490564;
+    background: #0B9FB7;
     bottom: 1px;
     left: 0;
     z-index: -1;
@@ -281,17 +281,17 @@ html {
   }
   
   .main-name {
-    color: #b4040d;
+    color: #0AC0DD;
   }
   
   .Typewriter__wrapper {
     font-size: 2.2em !important;
-    color: #b4040d !important;
+    color: #0AC0DD !important;
     font-weight: 600 !important;
   }
   .Typewriter__cursor {
     font-size: 2.4em !important;
-    color: #b4040d !important;
+    color: #0AC0DD !important;
   }
   
   @media (max-width: 767px) {
@@ -321,6 +321,8 @@ html {
     position: relative;
     padding-bottom: 70px !important;
     padding-top: 70px !important;
+    /* opacity: 0.5;
+    background: 0.5; */
   }
   
   .home-about-description {
@@ -328,18 +330,20 @@ html {
     padding-top: 100px !important;
     padding-bottom: 20px !important;
     text-align: center;
+
   }
   
   .home-about-body {
     padding-top: 50px;
     font-size: 1.2em !important;
     text-align: left;
+
   }
   
   .home-about-social {
     text-align: center !important;
     padding-top: 25px;
-    color: #b4040d !important;
+    color: #0AC0DD !important;
   }
   
   .home-about-social-links {
@@ -371,7 +375,7 @@ html {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #b4040d;
+    background: #0B9FB7;
     transition: 0.5s;
     transform: scale(0.9);
     z-index: -1;
@@ -402,7 +406,7 @@ html {
   /* Footer */
   /* --------- */
   .footer {
-    background-color: rgb(10, 4, 22);
+    background-color: rgb(17, 60, 85);
     bottom: 0 !important;
     padding-top: 10px !important;
     padding-bottom: 8px !important ;
@@ -457,10 +461,12 @@ html {
     padding-left: 25px !important;
     padding-right: 25px !important;
     height: auto !important;
+    border-radius: 25px;
+
   }
   
   .project-card-view {
-    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+    box-shadow: 0 4px 5px 3px rgba(11, 159, 183, 0.459) !important;
     color: white !important;
     background-color: transparent !important;
     opacity: 0.9 !important;
@@ -470,7 +476,7 @@ html {
   .project-card-view:hover {
     transform: scale(1.02) !important;
     overflow: hidden !important;
-    box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+    box-shadow: 0 4px 4px 5px rgba(11, 159, 183, 0.561) !important;
   }
   
   .blog-card {
@@ -524,8 +530,8 @@ html {
   
   .btn-primary:hover {
     color: #fff !important;
-    background-color: #b4040d !important;
-    border-color: #b4040d !important;
+    background-color: #0B9FB7 !important;
+    border-color: #0B9FB7 !important;
   }
   .btn:focus {
     outline: none !important;
@@ -550,7 +556,7 @@ html {
     color: white !important;
   }
   
-  .tech-icons {
+  /* .tech-icons {
     font-size: 4.5em !important;
     margin: 15px !important;
     padding: 10px !important;
@@ -563,7 +569,7 @@ html {
     box-shadow: 4px 5px 4px 3px rgba(139, 4, 45, 0.883) !important;
     overflow: hidden !important;
     transition: all 0.4s ease 0s !important;
-  }
+  } */
   
   @media (max-width: 767px) {
     .tech-icons {

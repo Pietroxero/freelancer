@@ -1,11 +1,14 @@
 import React, { useState } from "react";
+// import {Card} from '@chakra-ui/react';
 import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+// import { Text } from '@chakra-ui/react'
+import {FormControl, FormLabel} from '@chakra-ui/react';
+import {Button} from '@chakra-ui/react';
+// import Button from "react-bootstrap/Button";
 import { useQuery, useMutation } from "@apollo/client";
 import { Social } from "../utils/queries";
 import { Newsocialreview } from "../utils/mutations";
-import { Modal } from "react-bootstrap";
+import { Modal } from "@chakra-ui/react";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 const ClientId = "AXHDiIQhvPES-ADJw3Bj-5kaRIpCpo52etwRBW3Jg67xDtyKJYpUGGccESFiPCb39C3dLUS5hCBQU0nW";
 
@@ -90,7 +93,7 @@ let reviewValue;
               <Card.Text style={{ textAlign: "justify" }}>
                 <div>
                   {" "}
-                  <strong style={{ color: "red" }}>Description:</strong>{" "}
+                  <strong style={{ color: "#0B9FB7" }}>Description:</strong>{" "}
                   {social.projectdescription}
                 </div>
                 <div>
@@ -107,22 +110,22 @@ let reviewValue;
                     <Modal.Title>{social.projecttitle}</Modal.Title>
                   </Modal.Header>
                   <Modal.Body>
-                   <Form data-id={social._id} onSubmit={ handleSocialReviewSubmit}>
+                   <FormControl data-id={social._id} onSubmit={ handleSocialReviewSubmit}>
                  
-                   <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-        <Form.Label>Leave a Review! </Form.Label>
-        <Form.Control onChange={handleSocialReviewValueChange} as="textarea" rows={3} />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-        <Form.Label>User </Form.Label>
-        <Form.Control onChange={handleSocialReviewUserChange} as="textarea" rows={1} />
-      </Form.Group>
+                   <FormControl className="mb-3" controlId="exampleForm.ControlTextarea1">
+        <FormLabel>Leave a Review! </FormLabel>
+        <FormControl onChange={handleSocialReviewValueChange} as="textarea" rows={3} />
+      </FormControl>
+      <FormControl className="mb-3" controlId="exampleForm.ControlTextarea1">
+        <FormLabel>User </FormLabel>
+        <FormControl onChange={handleSocialReviewUserChange} as="textarea" rows={1} />
+      </FormControl>
       
       
       <Button variant="primary" type="submit">
         Submit Review
       </Button>
-                   </Form>
+                   </FormControl>
                   </Modal.Body>
                   <Modal.Footer>
                     
@@ -132,7 +135,7 @@ let reviewValue;
                   {social.socialreviews.map((socialreviews) => {
                     return (
                       <div>
-                        <strong style={{ color: "red" }}>Review:</strong>{" "}
+                        <strong style={{ color: "#0B82B7" }}>Review:</strong>{" "}
                         {socialreviews.review} <br></br>{" "}
                         <strong style={{ color: "red" }}>From:</strong>{" "}
                         {socialreviews.user} <br></br>{" "}
@@ -152,19 +155,15 @@ let reviewValue;
                     return (
                       <div>
                         {" "}
-                        <strong style={{ color: "red" }}>
+                        <strong style={{ color: "#612AF0" }}>
                           This wonderful site was crafted by:
                         </strong>{" "}
                         {creator.username}
                       </div>
                     );
                   })}
-                
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <div>
-          <PayPalScriptProvider options={{ "client-id": ClientId }} >
+
+<PayPalScriptProvider options={{ "client-id": ClientId }} >
           <PayPalButtons  style={{ layout: "horizontal", color: "silver"}} createOrder={(data, actions) => {
             return actions.order
             .create({
@@ -182,7 +181,33 @@ let reviewValue;
                 return orderId;
             });
           }} />
-      </PayPalScriptProvider>   
+      </PayPalScriptProvider> 
+
+                  
+                
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <div>
+          {/* <PayPalScriptProvider options={{ "client-id": ClientId }} >
+          <PayPalButtons  style={{ layout: "horizontal", color: "silver"}} createOrder={(data, actions) => {
+            return actions.order
+            .create({
+                purchase_units: [
+                    {
+                        amount: {
+                            
+                            value: social.price,
+                        },
+                    },
+                ],
+            })
+            .then((orderId) => {
+                // Your code here after create the order
+                return orderId;
+            });
+          }} />
+      </PayPalScriptProvider>    */}
       </div>  </>
         );
       })}
