@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import {Container, Grid, GridItem, Flex} from '@chakra-ui/react';
+// import { Container, Row, Col } from "react-bootstrap";
 import ShopCards from "./ShopCards";
 
 function Shops() {
@@ -22,17 +23,13 @@ function Shops() {
         <p style={{ color: "white" }}>
           These colorful Blog sites can be yours for a small fee!
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card"> 
+        <Grid templateColumns='repeat(3, 1fr)'>
+  
             <ShopCards
             />
-          </Col>
+         
 
-          <div className="project-card">
-      
-    </div>
-          
-        </Row>
+       </Grid>
       </Container>
     </Container></>
   );

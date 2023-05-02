@@ -8,7 +8,7 @@ import {Button} from '@chakra-ui/react';
 import { useQuery, useMutation } from "@apollo/client";
 import { Social } from "../utils/queries";
 import { Newsocialreview } from "../utils/mutations";
-import { Modal } from "@chakra-ui/react";
+import { Modal } from "react-bootstrap";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 const ClientId = "AXHDiIQhvPES-ADJw3Bj-5kaRIpCpo52etwRBW3Jg67xDtyKJYpUGGccESFiPCb39C3dLUS5hCBQU0nW";
 
