@@ -90,8 +90,14 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 ### Continued development
 For future development we would like to put a profile page where users can see previous purchases, as well as other payment processors.
 
+## Errors / Disclaimer
+
+While the app will work locally, deploying to Heroku did not work. MongoDB URI key and values were set correctly per blog instructions (screenshot attached of error). Error that was displaying when inspecting the page was a MIME error
 
 
+## Screenshots
+
+![Screenshot](./client/src/Assets/heroku%20error.png)
 
 ## Acknowledgments
 
@@ -99,3 +105,4 @@ https://github.com/Pietroxero/freelancer -Peter
 https://github.com/shane-pearson - Shane
 https://github.com/Xavionstar - Lincoln
 https://github.com/Poptartkay - Krista
+BROKEN HEROKU APP: https://morning-shelf-63228.herokuapp.com/ 
