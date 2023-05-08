@@ -97,12 +97,19 @@ While the app will work locally, deploying to Heroku did not work. MongoDB URI k
 
 ## Screenshots
 
-![Screenshot](./client/src/Assets/heroku%20error.png)
+![Screenshot](./client/src/Assets/freelancerlanding.png)
+
+![Screenshot](./client/src/Assets/freelancer_shops.png)
+
 
 ## Acknowledgments
 
 https://github.com/Pietroxero/freelancer -Peter
+
 https://github.com/shane-pearson - Shane
+
 https://github.com/Xavionstar - Lincoln
+
 https://github.com/Poptartkay - Krista
-BROKEN HEROKU APP: https://morning-shelf-63228.herokuapp.com/ 
+
+HEROKU: https://freelancer-project-3.herokuapp.com/ 
